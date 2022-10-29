@@ -1,7 +1,20 @@
 #include <iostream>
 using namespace std;
 
-void hello_pc01(void) 
+int getValueFromUser()
 {
-    cout << "Hello PC01" << endl;
+   cout << "Enter an integer: " << endl;
+   int x;
+   cin >> x;
+   return x;
 }
+
+int main()
+{
+   int a = getValueFromUser();
+   int b = getValueFromUser();
+
+   cout << a << " - " << b << " = " << a - b << endl;
+
+   return 0; 
+}у тебя нет ошибок

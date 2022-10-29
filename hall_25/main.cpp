@@ -1,7 +1,20 @@
-void hello_pc01(void);
+#include <iostream>
+using namespace std;
 
-int main(void) 
+int getValueFromUser() 
 {
-    hello_pc01();
-    return 0;
+    cout << "Enter an integer:" << endl;
+    int x;
+    cin >> x;
+    return x;
+}
+
+int main()
+{
+    int a = getValueFromUser();
+    int b = getValueFromUser();
+
+    cout << a << " + " << b << " = " << a + b << endl;
+
+    return 0; 
 }
