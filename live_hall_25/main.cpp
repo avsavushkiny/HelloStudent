@@ -1,20 +1,19 @@
 #include <iostream>
 using namespace std;
-
-int getValueFromUser() 
-{
-    cout << "Enter an integer:" << endl;
-    int x;
-    cin >> x;
-    return x;
-}
+int summa();
 
 int main()
 {
-    int a = getValueFromUser();
-    int b = getValueFromUser();
+    cout << summa() << endl;
+    return 0;
+}
 
-    cout << a << " + " << b << " = " << a + b << endl;
+int summa()
+{
+    int a = 10;
+    int b = 12;
+    int c;
 
-    return 0; 
+    c = a + b;
+    return c;
 }

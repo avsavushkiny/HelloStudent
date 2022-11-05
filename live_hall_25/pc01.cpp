@@ -1,20 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int getValueFromUser()
+int nesumma()
 {
-   cout << "Enter an integer: " << endl;
-   int x;
-   cin >> x;
-   return x;
+   int a = 120;
+   int b = 100;
+   int c;
+   c = a - b;
+   return c;
 }
-
-int main()
+int main(void)
 {
-   int a = getValueFromUser();
-   int b = getValueFromUser();
-
-   cout << a << " - " << b << " = " << a - b << endl;
-
+   cout << nesumma() << endl;
    return 0; 
-}у тебя нет ошибок
+}
