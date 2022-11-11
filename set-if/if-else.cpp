@@ -14,7 +14,7 @@ int main()
         {
             cout << ch;
         }
-        else cout << +ch;
+        else cout << ++ch;
         
         cin.get(ch);
     }
