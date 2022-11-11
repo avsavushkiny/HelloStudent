@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
-int summa();
+
+int getValueUser()
+{
+    int x; 
+    cin >> x;
+    return x;
+}
 
 int main()
 {
-    cout << summa() << endl;
+    int a = getValueUser();
+    int b = getValueUser();
+
+    cout << a + b << endl;
+
     return 0;
-}
-
-int summa()
-{
-    int a = 10;
-    int b = 12;
-    int c;
-
-    c = a + b;
-    return c;
 }
