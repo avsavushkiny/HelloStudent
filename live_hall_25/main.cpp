@@ -1,19 +1,20 @@
 #include <iostream>
 using namespace std;
-
-int getValueUser()
-{
-    int x; 
-    cin >> x;
-    return x;
-}
+void pattern();
 
 int main()
 {
-    int a = getValueUser();
-    int b = getValueUser();
+    pattern();
+}
 
-    cout << a + b << endl;
-
-    return 0;
+void pattern()
+{
+    for (int a = 1; a <= 5; a++)
+    {
+        for (int b = 1; b <= 5 - a; b++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
 }
